@@ -58,6 +58,4 @@ Router.get("/c/:category",async(req,res)=>
 
 
 
-
-
 export default Router;
