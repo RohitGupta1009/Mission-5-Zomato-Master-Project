@@ -26,20 +26,19 @@ const MobileNav=()=>
     );
 };
 
-const MediumNav=()=>
+const LargeNav=()=>
 {
     return(
         <>
-
-        <div className="flex items-center gap-4 lg:w-3/4 ">
-        <div className="w-36">
+        <div className="container px-20 mx-auto">
+        <div className="flex items-center gap-4 h-2">
+         <div className="w-32">
              <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
              alt="Zomato logo"
              className="w-full h-full"/>
          </div>
-
-         <div className="flex items-center gap-3 w-full bg-white shadow-md p-3 border border-gray-200 rounded">
-             <div className="flex items-center gap-2 border-r-2 border-gray-300 pr-2 w-full">
+         <div className="flex items-center gap-3 w-3/5 bg-white shadow-md p-3 border border-gray-200 rounded ml-2">
+             <div className="flex items-center gap-2 border-r-2 border-gray-300 pr-2 w-1/2">
                  <span className="text-zomato-400">
                      <HiLocationMarker/>
                  </span>
@@ -54,20 +53,16 @@ const MediumNav=()=>
              </div>
          </div>
 
-         <div className="flex gap-2">
-             <button className="text-gray-500 text-xl hover:text-gray-800">Login</button>
-             <button className="text-gray-500 text-xl hover:text-gray-800">Signup</button>
+         <div className="flex gap-12 ml-20">
+             <button className="text-gray-500 text-xl hover:text-gray-800 ml-2">Login</button>
+             <button className="text-gray-500 text-xl hover:text-gray-800">Sign up</button>
          </div>
 
         </div>
-
+        </div>
         </>
     );
 };
-
-
-
-
 
 
 const Navbar=()=>
@@ -75,12 +70,14 @@ const Navbar=()=>
     return(
         <>
         <nav className="py-3 px-4 flex bg-white shadow-md w-full items-center">
-          <div className="md:hidden w-full">
+          <div className="lg:hidden w-full">
               <MobileNav/>
-          </div>
-          <div className="hidden md:block w-full">
-              <MediumNav/>
           </div>  
+        </nav>
+        <nav className="py-3 px-4 flex bg-white w-full items-center hidden lg:flex">
+        <div className="hidden lg:flex w-full">
+              <LargeNav/>
+          </div>
         </nav>
         </>
     );
