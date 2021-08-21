@@ -13,25 +13,21 @@ const MobileTabs=()=>
           id:`delivery`,
           icon:<RiShoppingBag3Line/>,
           name:"Delivery",
-          isActive:false,
         },
         {
             id:`dining`,
             icon:<IoFastFoodOutline/>,
             name:"Dining Out",
-            isActive:false,
           },
           {
             id:`night`,
             icon:<BiDrink/>,
             name:"Nightlife",
-            isActive:false,
           },
           {
             id:`nutri`,
             icon:<IoNutritionOutline/>,
             name:"Nutrition",
-            isActive:false,
           },
 ]);
     const {type}=useParams();
