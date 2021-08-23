@@ -100,7 +100,7 @@ const LargeTabs=()=>
    return (
       <>
         
-        <div className="hidden lg:flex mt-12 container mx-auto px-20 gap-10 ml-12">
+        <div className="hidden lg:flex my-12 container mx-auto px-20 gap-10 ml-12">
             
             {
                  
