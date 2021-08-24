@@ -5,8 +5,8 @@ const DeliverySmCard=({image,title})=>
 {
    return (
        <>
-       <div className="lg:hidden bg-white shadow rounded-md mb-2 w-24 h-18 md:w-56">
-             <div className="w-full h-16 md:h-20 border-rounded ">
+        <div className="lg:hidden bg-white shadow rounded-md mb-2 w-24 h-18 md:w-56">
+             <div className="w-full h-16 md:h-20 border-rounded">
                  <img src={image}
                  alt="Food"
                  className="w-full h-full object-cover rounded-t-md"/>
@@ -14,7 +14,7 @@ const DeliverySmCard=({image,title})=>
              <div>
                  <h3 className="text-sm font-light text-center my-1">{title}</h3>
              </div>
-         </div>
+         </div> 
        </>
    );
 };
@@ -27,13 +27,15 @@ const DeliveryLgCard=({image,title})=>
               <div className="w-full h-full">
                   <img src={image}
                   alt="Food"
-                  className="w-full h-full object-cover rounded-md shadow-lg"/>
-              </div>
-              <div>
-                  <h3 className="text-xl font-medium my-1">{title}</h3>
+                  className="w-full h-full object-cover rounded-md"/>
               </div>
           </div>
+          <div className="hidden lg:block">
+                  <h3 className=" hidden lg:block text-xl font-medium text-gray-700 my-2">{title}</h3>
+              </div>
+
         </>
+
     );
 };
 

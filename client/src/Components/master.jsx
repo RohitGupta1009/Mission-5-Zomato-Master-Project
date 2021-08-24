@@ -9,9 +9,11 @@ const Master = () => {
     const {type}=useParams();
 
     return (
-        <div className="my-5">
-        {type==="delivery" && <Delivery/>}
+        <>
+         <div className="my-5">
+            {type==="delivery" && <Delivery/>}
         </div>
+        </>
     );
 };
 

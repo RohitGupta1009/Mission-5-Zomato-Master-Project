@@ -22,11 +22,6 @@ const DeliveryCarousel = () => {
         },
         {
           image:
-            "https://b.zmtcdn.com/data/homepage_dish_data/4/742929dcb631403d7c1c1efad2ca2700.png",
-          title: "Chicken",
-        },
-        {
-          image:
             "https://b.zmtcdn.com/data/dish_images/aebeb88b78a4a83ea9e727f234899bed1602781186.png",
           title: "Chaat",
         },
@@ -56,18 +51,18 @@ const DeliveryCarousel = () => {
         prevArrow:<PrevArrow/>
       };
 
-    return (
+      return (
         <>
 
-        <h1 className="text-xl lg:text-3xl font-semibold text-gray-800 mb-4 mb-2 lg:mb-8">Inspiration for your first order</h1>
-        <div className=" lg:hidden flex flex-wrap justify-between gap-3 lg:gap-0 w-full ">
+        <h1 className="text-xl mt-6 leading-relaxed md:leading-none lg:text-3xl font-medium md:font-semibold text-gray-800 md:mb-4 mb-2 lg:mb-8">Inspiration for your first order</h1>
+        <div className="lg:hidden flex flex-wrap justify-between gap-3 lg:gap-0 w-full">
             {
                 categories.map((food)=>
                 (
                     <DeliveryCategory {...food}/>
                   
                 ))
-            };
+            }
         </div>
 
         <div className="hidden lg:block">
